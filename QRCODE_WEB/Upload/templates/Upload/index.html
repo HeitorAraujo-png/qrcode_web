@@ -58,25 +58,6 @@
         </div>
     </div>
     {% endif %}
-    <div class="localLER">
-        <div class="Background">
-            <div class="tamanho">
-                <form method="post" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <div class="titulo">
-                        <label>LER QRCODE</label><br>
-                    </div>
-                    <input type="file" name="arq" required><br><br>
-                    <button type="submit" name='ler'>LER QRCODE</button>
-                    <div class="info">
-                    {% if qr %}
-                        <p>{{ qr }}</p>
-                        {% endif %}
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
 </body>
 
